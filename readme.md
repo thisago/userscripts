@@ -1,6 +1,6 @@
 <!--
   Created at: 07/31/2021 18:26:20 Saturday
-  Modified at: 07/31/2021 06:34:33 PM Saturday
+  Modified at: 07/31/2021 06:38:39 PM Saturday
 -->
 
 # Userscripts
@@ -13,7 +13,10 @@ Here some my userscripts
 
 ## Installation
 
-Install a userscript managet like [Violentmonkey](https://violentmonkey.github.io/)
+1. Install a userscript manager like [Violentmonkey](https://violentmonkey.github.io/)
+2. Go to any script below
+3. Clink in `Raw` button to open file
+4. Confirm installation on extension
 
 ---
 
