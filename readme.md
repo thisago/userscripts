@@ -1,6 +1,6 @@
 <!--
   Created at: 07/31/2021 18:26:20 Saturday
-  Modified at: 07/31/2021 06:38:39 PM Saturday
+  Modified at: 07/31/2021 06:48:06 PM Saturday
 -->
 
 # Userscripts
@@ -23,6 +23,10 @@ Here some my userscripts
 ## [Youtube comment urls tracker remover](youtube/commentUrlNoTracking.user.js)
 
 Removes the tracking page that asks you to proceed exit youtube
+
+## [Metager links untracker](metager/linkUntracker.user.js)
+
+Remove the tracking redirection in Metager
 
 ## Licence
 
