@@ -10,7 +10,7 @@
 
 /*
   Created at: 07/31/2021 17:38:05 Saturday
-  Modified at: 07/31/2021 06:25:09 PM Saturday
+  Modified at: 08/05/2021 01:20:02 PM Thursday
 */
 
 /*
@@ -18,23 +18,24 @@
 */
 
 ;(() => {
-  const interval = setInterval(() => {
-    const description = document.querySelector(
-      "#description > yt-formatted-string"
-    )
-    if (description) {
-      clearInterval(interval)
-      console.log(description)
-      ;[...description.querySelectorAll("a")].map((a) => {
-        console.log(a.href)
-        a.href = decodeURIComponent(
-          a.href.replace(
-            /https:\/\/www.youtube.com\/redirect\?event=.+&redir_token=.+&q=(.+)/,
-            "$1"
+  let checkedTitle = ""
+  setInterval(() => {
+    const currentTitle = document.querySelector("#container > h1 > yt-formatted-string").innerHTML
+    if (checkedTitle != currentTitle) {
+      const description = document.querySelector(
+        "#description > yt-formatted-string"
+      )
+      if (description) {
+        checkedTitle = currentTitle
+        ;[...description.querySelectorAll("a")].map((a) => {
+          a.href = decodeURIComponent(
+            a.href.replace(
+              /https:\/\/www.youtube.com\/redirect\?event=.+&redir_token=.+&q=(.+)/,
+              "$1"
+            )
           )
-        )
-        console.log(a.href)
-      })
+        })
+      }
     }
   }, 100)
 })()
